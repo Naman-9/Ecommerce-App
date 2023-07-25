@@ -1,0 +1,77 @@
+Backend Folders
+build
+controller
+    AuthController.js
+    BrandController.js
+    CartController.js
+    CategoryController.js
+    OrderController.js
+    ProductController.js
+    UserController.js
+
+model
+    BrandModel.js
+    CartModel.js
+    CategoryModel.js
+    OrderModel.js
+    UserModel.js
+    productModel.js
+
+routes
+    AuthRoutes.js
+    BrandsRoutes.js
+    CartRoutes.js
+    CategoriesRoutes.js
+    OrderRoutes.js
+    ProductRoutes.js
+    UserRoutes.js
+
+services
+common.js
+.gitignore
+index.js
+package.json
+
+frontend Folders 
+
+public
+    apple-touch-icon.png
+    ecommerce.png
+    favicon-16x16.png
+    favicon-32x32.png
+    favicon.ico
+    index.html
+    logo192.png
+    logo512.png
+    manifest.json
+    robots.txt
+
+src 
+    app
+        constants.js
+        store.js
+    features
+        admin
+            components 
+                Admin.js 
+                AdminOrder.js
+            admnApi.js
+            adminSlice.js
+        auth 
+        cart 
+        common 
+        counter 
+        navbar 
+        order 
+        product 
+        user 
+
+pages
+App.css
+App.js
+Stripe.css
+index.css
+index.js 
+.gitignore
+package.json
+tailwind.config.js
