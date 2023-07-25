@@ -1,0 +1,14 @@
+const express = require('express');
+const { createOrder, fetchOrdersByUser, deleteOrder, updateOrder, fetchAllOrders } = require('../controller/OrderController');
+
+const router = express.Router();
+
+// /products is added in index,js
+router
+    .post('/', createOrder)
+    .get('/own/', fetchOrdersByUser)
+    .delete('/:id', deleteOrder)
+    .patch('/:id', updateOrder)
+    .get('/', fetchAllOrders)
+    ;
+exports.router = router;    
