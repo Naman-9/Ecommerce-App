@@ -17,6 +17,7 @@ const { isAuth, sanitizeUser, cookieExtractor } = require('./services/common');
 const path = require('path');
 const stripe = require('stripe')(process.env.STRIPE_SERVER_KEY);
 const { Order } = require('./model/OrderModel');
+const { env } = require('process');
 
 const productRoutes = require('./routes/ProductRoutes');
 const categoriesRoutes = require('./routes/CategoriesRoutes');
@@ -67,7 +68,7 @@ server.post(
 );
 
 // JWT options 
-server.use(express.static('build'));
+server.use(express.static(path.resolve(__dirname, 'build')));
 server.use(cookieParser());
 
 const opts = {};
