@@ -84,7 +84,7 @@ exports.resetPasswordRequest = async (req, res) => {
 
     // Also set token in email
     const resetPageLink =
-      'https://ecommerce-liard-alpha.vercel.app/reset-password?token=' + token + '&email=' + email;
+      'https://c-ecom.vercel.app/reset-password?token=' + token + '&email=' + email;
     const subject = 'reset password for e-commerce';
     const html = `<p>Click <a href='${resetPageLink}'>here</a> to Reset Password</p>`;
 
